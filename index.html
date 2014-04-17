@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Proyecto de la primera generación del 2014" /> 
-	<title>Puls2014: Comunidad de personas.</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Puls2014: Comunidad de personas.</title>	
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilos.css">
+	<script src="prefixfree.js"></script>
 </head>
 <body>
 
@@ -18,6 +20,15 @@
 			<img src="avatar.jpg" />
 		</figure>
 	</header>
+	<aside>
+		<figure id="geo">
+		</figure>
+		<video  controls autoplay>
+			  <source src="lecturas.mp4" type="video/mp4">
+			  <source src="lecturas.ogg" type="video/ogg">
+			  Your browser does not support the video tag.
+		</video>
+	</aside>
 	<nav>
 		<ul>
 			<li><a href="#">Python</a></li>
@@ -25,9 +36,15 @@
 			<li><a href="#">Javascript</a></li>
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
-			<li id="publicar_nav"><a href="#">Publicar</a></li>
+			<li id="publicar_nav"><a href="#" class="icon-pencil" id="mostrar_form">Publicar</a></li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Titulo" required>
+		<input type="url" id="url" placeholder="Link" required>
+		<input type="submit" value="Agregar"> 
+	</form>
+
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
@@ -50,13 +67,115 @@
 
 			<div class="votacion">
 
-				<a href="#" class="up">U</a>
+				<a href="#" class="up icon-arrow-up"></a>
 				738
-				<a href="#" class="down">D</a>
+				<a href="#" class="down icon-arrow-down"></a>
 
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="guardar_item icon-star"></a>
 			</div>
+
+
+
+		</article>
+
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item"><a href="#">
+				Título del artículo
+			</a></h2>
+
+			<div class="autor_item">
+				por <a href="#">Jorge Diaz</a>
+			</div>
+
+			<div class="datos_item">
+				<a href="#" class="tag_item">
+					pony
+				</a>
+				<span class="fecha_item"> hace <strong>5</strong> minutos</span>
+			</div>
+
+			<div class="votacion">
+
+				<a href="#" class="up icon-arrow-up"></a>
+				738
+				<a href="#" class="down icon-arrow-down"></a>
+
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-star"></a>
+			</div>
+
+
+		</article>
+
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item"><a href="#">
+				Título del artículo
+			</a></h2>
+
+			<div class="autor_item">
+				por <a href="#">Jorge Diaz</a>
+			</div>
+
+			<div class="datos_item">
+				<a href="#" class="tag_item">
+					pony
+				</a>
+				<span class="fecha_item"> hace <strong>5</strong> minutos</span>
+			</div>
+
+			<div class="votacion">
+
+				<a href="#" class="up icon-arrow-up"></a>
+				738
+				<a href="#" class="down icon-arrow-down"></a>
+
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-star"></a>
+			</div>
+
+
+		</article>
+
+
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item"><a href="#">
+				Título del artículo
+			</a></h2>
+
+			<div class="autor_item">
+				por <a href="#">Jorge Diaz</a>
+			</div>
+
+			<div class="datos_item">
+				<a href="#" class="tag_item">
+					pony
+				</a>
+				<span class="fecha_item"> hace <strong>5</strong> minutos</span>
+			</div>
+
+			<div class="votacion">
+
+				<a href="#" class="up icon-arrow-up"></a>
+				738
+				<a href="#" class="down icon-arrow-down"></a>
+
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-star"></a>
+			</div>
+
 
 
 		</article>
@@ -66,6 +185,8 @@
 		<p> mejorando.la 2014 </p>
 	</footer>
 
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="formulario.js"> </script>
+<script src="geo.js"> </script>
 </body>
 </html>
